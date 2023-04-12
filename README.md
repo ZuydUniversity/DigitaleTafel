@@ -39,4 +39,7 @@ voer hier de API key van jouw ArcGIS account in:
 6. ```npm start```
 
 ### 3. Gebruik
-<work in progress>
+Belangrijk is om de applicatie als een server te runnen. Dit gebeurd door ```npm start``` uit te voeren, waarbij gebruikt wordt gemaakt van de 'live-server' package.
+
+
+- work in progress

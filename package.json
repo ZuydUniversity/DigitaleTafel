@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "live-server": "^1.2.2"
+  },
+  "config": {
+    "live-server": {
+      "mimeTypes": {
+        "html": "text/html",
+        "png": "image/png",
+        "jpg": "image/jpeg",
+        "css": "text/css",
+        "js": "application/javascript"
+      }
+    }
+  },
+  "scripts": {
+    "start": "node -r dotenv/config node_modules/live-server/live-server.js --port=8080 --entry-file=public/index.html"
+  }
+}

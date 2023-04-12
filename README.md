@@ -1,5 +1,5 @@
 # Digitale Tafel
-Het project Digitale Tafel is een casusopdracht binnen de Design Science Research minor op Zuyd Hogeschool. De opdracht voor deze casus was om in combinatie met een digitale tafel en object interactie burgerparticipatie te bevorderen. De vorige casusgroepen hebben objectherkenning weten te realiseren met de digitale tafel. In deze casus is een simulatieomgeving gerealiseerd. Hopende, dat burgers zo laagdrempelig mogelijk kunnen deelnemen aan discussies betreffende ruimtelijke ordening. Deze repos is een Proof of Concept.
+Het project Digitale Tafel is een casusopdracht binnen de Design Science Research minor op Zuyd Hogeschool. De opdracht voor deze casus was om in combinatie met een digitale tafel en object interactie burgerparticipatie te bevorderen. De vorige casusgroepen hebben objectherkenning weten te realiseren met de digitale tafel, maar ook een aanbeveling gegeven aan een [repository](https://github.com/andypotato/tritra) die gecloned is. In deze casus is een simulatieomgeving gerealiseerd. Hopende, dat burgers zo laagdrempelig mogelijk kunnen deelnemen aan discussies betreffende ruimtelijke ordening. Deze repos is een Proof of Concept.
 
 Deze omgeving toont een kaart, waarbij standaard is ingezoomt op de gemeente Valkenburg. Ook wordt op deze kaart de bestemmingslagen ingeladen als datalayer. Dit gebeurd met behulp van ArcGIS Javascript API.
 Indien een object op de tafel geplaatst is dat herkent wordt, verschijnt een cirkel op de kaart, dat geluidsoverlast simuleert. 
@@ -34,7 +34,7 @@ git clone https://github.com/Daanziaat/DigitaleTafel
 3. Navigeer naar ```DigitaleTafel\Object_recognizer\node_modules\tritra\dist\participatieTafel\Javascript\Secrets.js``` (niet in de terminal, maar zoeken in de code zelf),
 voer hier de API key van jouw ArcGIS account in:
 ```export var arcgisKey = "<jouw API key>"```
-4. Open de terminal in de IDE of elke command-line shell en navigeer de main directory
+4. Open de terminal in de IDE of elke command-line shell en navigeer naar de main directory
 5. ```npm intall```
 6. ```npm start```
 

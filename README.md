@@ -28,11 +28,11 @@ De applicatie kan opgestart worden zonder enkel van de vereisten, maar het laadt
 
 ### 2. Installatie
 1. Intalleer [node.js](https://nodejs.org/en) en [GIT](https://git-scm.com/downloads) indien nog niet geïnstalleerd
-2. Clone de desbetreffende repository:
+2. Clone de desbetreffende repository (op een locatie waar je het wilt installeren):
 ```
 git clone https://github.com/Daanziaat/DigitaleTafel
 ```
-3. Navigeer naar 
+3. Navigeer naar de volgende file (indien eis 1 bekrachtigd moet worden):
 ```
 DigitaleTafel\Object_recognizer\node_modules\tritra\dist\participatieTafel\Javascript\Secrets.js
 ``` 
@@ -46,13 +46,14 @@ export var arcgisKey = "<jouw API key>"
  ```
  npm intall
  ```
-7. Voer de applicatie uit:
+6. Voer de applicatie uit:
 ```
 npm start
 ```
 
 ### 3. Gebruik
 Belangrijk is om de applicatie als een server te runnen. Dit gebeurd automatisch door ```npm start``` uit te voeren, waarbij gebruikt wordt gemaakt van de 'live-server' package.
+
 
 
 

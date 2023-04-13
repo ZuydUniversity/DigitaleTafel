@@ -2,7 +2,7 @@
 Het project Digitale Tafel is een casusopdracht binnen de desbetreffende hogeschool. De doelstelling voor deze casus was om in combinatie met een digitale tafel en object interactie een simulatieomgeving te bouwen dat burgerparticipatie hoort te bevorderen. Denk bijvoorbeeld aan discussies met de gemeente betreffende ruimtelijke ordening. 
 De vorige casusgroepen hebben objectherkenning weten te realiseren met de digitale tafel, maar ook een aanbeveling gegeven aan een [repository](https://github.com/andypotato/tritra) die gecloned is. In deze casus is een simulatieomgeving gerealiseerd. Hopende, dat burgers zo laagdrempelig mogelijk kunnen deelnemen aan discussies betreffende ruimtelijke ordening. Deze repos is een Proof of Concept.
 
-Deze omgeving toont een kaart, waarbij standaard is ingezoomt op de gemeente Valkenburg. Ook wordt op deze kaart de bestemmingslagen ingeladen als datalayer. Dit gebeurd met behulp van ArcGIS Javascript API.
+Deze omgeving toont een kaart, waarbij standaard is ingezoomd op de gemeente Valkenburg. Ook wordt op deze kaart de bestemmingslagen ingeladen als datalayer. Dit gebeurd met behulp van ArcGIS Javascript API.
 Indien een object op de tafel geplaatst is dat herkent wordt, verschijnt een cirkel op de kaart, dat geluidsoverlast simuleert (althans, dat hoort de cirkel voor te stellen). 
 
 Deze bevat bovendien een paar extra functies:

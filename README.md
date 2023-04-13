@@ -22,7 +22,8 @@ Deze bevat bovendien een paar extra functies:
 2. Een digitale tafel, met touchscreen herkenning van minimaal 10 punten, is vereist om de applicatie te draaien.
 3. "smart" objecten die elektrische lading door geven naar 3 drukpunten met 2 identieke en één unieke hoek (een gelijkbenige driehoek). In het huidige voorbeeld zijn de hoekpunten [54, 91, 118] graden gebruikt.
 
-Indien stap 2 en 3 niet mogelijk zijn, is het echter mogelijk om met 'single' touch/muis kliks de applicatie te gebruiken. Indien de applicatie puur getest moet worden voor debugging purposes, is stap 1 voldoende.
+Indien eis 2 en 3 niet mogelijk zijn, is het echter mogelijk om met 'single' touch/muis kliks de applicatie te gebruiken. Indien de applicatie puur getest moet worden voor debugging purposes, is eis 1 voldoende.
+De applicatie kan opgestart worden zonder enkel van de vereisten, maar het laadt als gevolg de GIS data niet in.
 
 
 ### 2. Installatie
@@ -31,7 +32,7 @@ Indien stap 2 en 3 niet mogelijk zijn, is het echter mogelijk om met 'single' to
 ```
 git clone https://github.com/Daanziaat/DigitaleTafel
 ```
-3. Navigeer naar ```DigitaleTafel\Object_recognizer\node_modules\tritra\dist\participatieTafel\Javascript\Secrets.js``` (niet in de terminal, maar zoeken in de code zelf),
+3. Navigeer naar ```DigitaleTafel\Object_recognizer\node_modules\tritra\dist\participatieTafel\Javascript\Secrets.js``` (niet in de terminal, maar zoeken in de directory via een IDE naar keuze),
 voer hier de API key van jouw ArcGIS account in:
 ```export var arcgisKey = "<jouw API key>"```
 4. Open de terminal in de IDE of elke command-line shell en navigeer naar de main directory
@@ -39,7 +40,12 @@ voer hier de API key van jouw ArcGIS account in:
 6. ```npm start```
 
 ### 3. Gebruik
-Belangrijk is om de applicatie als een server te runnen. Dit gebeurd door ```npm start``` uit te voeren, waarbij gebruikt wordt gemaakt van de 'live-server' package.
+Belangrijk is om de applicatie als een server te runnen. Dit gebeurd automatisch door ```npm start``` uit te voeren, waarbij gebruikt wordt gemaakt van de 'live-server' package.
+
+
+
+
+
 
 
 - work in progress

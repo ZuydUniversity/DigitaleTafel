@@ -27,7 +27,7 @@ De applicatie kan opgestart worden zonder enkel van de vereisten, maar het laadt
 
 
 ### 2. Installatie
-1. Intalleer [node.js](https://nodejs.org/en) op jouw pc
+1. Intalleer [node.js](https://nodejs.org/en) en [GIT](https://git-scm.com/downloads) indien nog niet geïnstalleerd
 2. Clone de desbetreffende repository:
 ```
 git clone https://github.com/Daanziaat/DigitaleTafel

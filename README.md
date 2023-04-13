@@ -18,7 +18,7 @@ Deze bevat bovendien een paar extra functies:
 4. Architectuur
 5. Development
 
-### 1. Vereisten:
+## 1. Vereisten:
 1. Voor de werking van de applicatie is een ArcGIS API Key is vereist. [Maak hier een gratis developer account aan.](https://developers.arcgis.com/sign-up/) Genereer vervolgens een API Key.
 2. Een digitale tafel, met touchscreen herkenning van minimaal 10 punten.
 3. ["smart" objecten](https://medium.com/swlh/building-your-own-interactive-touchscreen-table-with-object-recognition-768b663ccce8) die elektrische lading door geven naar 3 drukpunten met 2 identieke en één unieke hoek (een gelijkbenige driehoek). In het huidige voorbeeld zijn de hoekpunten [54, 91, 118] graden gebruikt.
@@ -27,7 +27,7 @@ Indien eis 2 en 3 niet mogelijk zijn, is het echter mogelijk om met 'single' tou
 De applicatie kan opgestart worden zonder enkel van de vereisten, maar het laadt als gevolg de GIS data niet in.
 
 
-### 2. Installatie
+## 2. Installatie
 1. Intalleer [node.js](https://nodejs.org/en) en [GIT](https://git-scm.com/downloads) indien nog niet geïnstalleerd
 2. Clone de desbetreffende repository (op een locatie waar je het wilt installeren):
 ```
@@ -52,7 +52,7 @@ export var arcgisKey = "<jouw API key>"
 npm start
 ```
 
-### 3. Gebruik
+## 3. Gebruik
 Belangrijk is om de applicatie als een server te runnen. Dit gebeurd automatisch door ```npm start``` uit te voeren, waarbij gebruikt wordt gemaakt van de 'live-server' package.
 
 Indien de applicatie is opgestart, wordt (als het goed is) een GIS kaart getoond met een rode cirkel in het midden. Drie use-cases;
@@ -62,7 +62,7 @@ Indien de applicatie is opgestart, wordt (als het goed is) een GIS kaart getoond
 3. Plaats object met driehoeksherkenning op de tafel (touchscreen). Zorg ervoor dat de vingers het "geleidingsdeel" aanraken tijdens het plaatsen/bewegen/slepen van het object, gezien het elektriciteit moet laden om door de tafel herkent te worden.
 
 
-### 4. Architectuur
+## 4. Architectuur
 **Main dish**
 
 De onderste component diagram toont de werking zo'n beetje in a nutshell.
@@ -85,7 +85,7 @@ Indien er errors zich ineens zouden voordoen bij ```npm start```, kunnen in ```D
 
 Alle dependencies zijn als het goed is ook vernomen in de package.json en package-lock.json in de root directory.
 
-### 5. Development
+## 5. Development
 Visual Studio Code als IDE wordt aangeraden om erop te runnen (andere IDE's zouden in theorie ook moeten werken, maar die zijn niet getest). Inprincipe is dat alles wat nodig is om deze applicatie verder te ontwikkelen.
 
 Bugs die er nog in zitten:

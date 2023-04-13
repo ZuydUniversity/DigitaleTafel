@@ -32,12 +32,24 @@ De applicatie kan opgestart worden zonder enkel van de vereisten, maar het laadt
 ```
 git clone https://github.com/Daanziaat/DigitaleTafel
 ```
-3. Navigeer naar ```DigitaleTafel\Object_recognizer\node_modules\tritra\dist\participatieTafel\Javascript\Secrets.js``` (niet in de terminal, maar zoeken in de directory via een IDE naar keuze),
+3. Navigeer naar 
+```
+DigitaleTafel\Object_recognizer\node_modules\tritra\dist\participatieTafel\Javascript\Secrets.js
+``` 
+(niet in de terminal, maar zoeken in de directory via een IDE naar keuze),
 voer hier de API key van jouw ArcGIS account in:
-```export var arcgisKey = "<jouw API key>"```
+```
+export var arcgisKey = "<jouw API key>"
+```
 4. Open de terminal in de IDE of elke command-line shell en navigeer naar de main directory
-5. ```npm intall```
-6. ```npm start```
+5. Installeer de benodigde packages met de volgende command:
+ ```
+ npm intall
+ ```
+7. Voer de applicatie uit:
+```
+npm start
+```
 
 ### 3. Gebruik
 Belangrijk is om de applicatie als een server te runnen. Dit gebeurd automatisch door ```npm start``` uit te voeren, waarbij gebruikt wordt gemaakt van de 'live-server' package.

@@ -75,7 +75,8 @@ Een paar overige settings worden aangeraden:
 
 De onderste component diagram toont de werking zo'n beetje in a nutshell.
 
-![ComponentDiagramLj3Blok3 (2)](https://user-images.githubusercontent.com/74657735/231879189-411d26fa-1b5c-4d24-8ee4-d43eb3c93a7d.png)
+![ComponentDiagramLj3Blok3 (3)](https://user-images.githubusercontent.com/74657735/232145781-91871211-a182-4919-a5e0-4f1a5d4e6e86.png)
+
 
 De logica om de functionaliteiten werkend te krijgen (die dus tijdens de casus zijn ontwikkeld) begeven zich in ```DigitaleTafel/Object_recognizer/node_modules/tritra/dist/participatieTafel/```, dat in de diagram gevisualiseerd is. Het is afhankelijk van ```js/tritra.js```, dat de objectherkenning regelt.
 

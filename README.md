@@ -35,19 +35,22 @@ git clone https://github.com/Daanziaat/DigitaleTafel
 ```
 3. Navigeer naar de volgende file (indien eis 1 bekrachtigd moet worden):
 ```
-DigitaleTafel\Object_recognizer\node_modules\tritra\dist\participatieTafel\Javascript\Secrets.js
+participatieTafel\Secrets.js
 ``` 
 (niet in de terminal, maar zoeken in de directory via een IDE naar keuze),
 voer hier de API key van jouw ArcGIS account in:
 ```
 export var arcgisKey = "<jouw API key>"
 ```
-4. Open de terminal in de IDE of elke command-line shell en navigeer naar de main directory
+4. Open de terminal in de IDE of elke command-line shell en navigeer naar de root directory:
+```
+cd <path>\DigitaleTafel
+```
 5. Installeer de benodigde packages met de volgende command:
  ```
  npm intall
  ```
-6. Voer de applicatie uit:
+6. Voer de applicatie uit met de volgende command:
 ```
 npm start
 ```
@@ -61,6 +64,9 @@ Indien de applicatie is opgestart, wordt (als het goed is) een GIS kaart getoond
 2. Druk met de vinger op de kaart (op een touchscreen obviously) om een cirkel toe te voegen.
 3. Plaats object met driehoeksherkenning op de tafel (touchscreen). Zorg ervoor dat de vingers het "geleidingsdeel" aanraken tijdens het plaatsen/bewegen/slepen van het object, gezien het elektriciteit moet laden om door de tafel herkent te worden.
 
+Een paar overige settings worden aangeraden:
+- Druk op F11 om alleen de webapplicatie te zien (dus de tabs etc. zijn niet zichtbaar)
+- Windows 10: [Schakel Three-finger gestures uit](https://www.tenforums.com/tutorials/148114-how-enable-disable-touchpad-multifinger-gestures-windows-10-a.html), om te voorkomen dat de objectherkenning gaat buggen
 
 ## 4. Architectuur
 **Main dish**
@@ -86,9 +92,10 @@ Indien er errors zich ineens zouden voordoen bij ```npm start```, kunnen in ```D
 Alle dependencies zijn als het goed is ook vernomen in de package.json en package-lock.json in de root directory.
 
 ## 5. Development
-Visual Studio Code als IDE wordt aangeraden om erop te runnen (andere IDE's zouden in theorie ook moeten werken, maar die zijn niet getest). Inprincipe is dat alles wat nodig is om deze applicatie verder te ontwikkelen.
+Visual Studio Code als IDE wordt aangeraden om erop te runnen (andere IDE's zouden in theorie ook moeten werken, maar die zijn niet getest). Ook wordt aangeraden om met Windows te werken, maar nogmaals: in theorie zou Linux en MacOS ook moeten werken. Deze applciatie is op meerdere Windows PC's getest, waarbij deze succesvol zijn doorlopen. Inprincipe is dat alles wat nodig is om deze applicatie verder te ontwikkelen.
 
 Bugs die er nog in zitten:
 - Bij uitzoomen verdwijnt de bestemmingsplanlaag
 - Je kan op de 'spreek knop' spammen als je dat leuk vind om te doen
 - Indien uitgezoomd -> effects bij plaatsing heeft dezelfde scaling
+- Normaliter hoor je een "kort" effectje te zien na plaatsing van het object. Dit werkte niet optimaal en door gebrek aan tijd is deze helaas niet geïmplementeerd. Het effectje kan getriggered worden met een click event, maar geen touch.

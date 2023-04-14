@@ -95,7 +95,7 @@
 	    height: 50px;
       box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.7);
     }
-    .container {
+    #container {
     z-index: 1;
     position: absolute;
     width: 200px;
@@ -105,7 +105,7 @@
     transform: translate(-60%, -60%);
     display: none;
     }
-    .container span{
+    #container span{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -116,11 +116,11 @@
         animation-delay: calc(1s * var(--i));
     }
     @keyframes pulseAnimate {
-        100%{
-            opacity: 0;
-            transform: scale(2);
-        }
-    }
+     100%{
+        opacity: 0;
+        transform: scale(2);
+     }
+ }
   </style>
 <!--Tritra-->
 <script type="text/javascript" src="../Object_recognizer/node_modules/tritra/dist/js/tritra.js"></script>
@@ -170,20 +170,41 @@
     </div>  
   </div>
   <input type="checkbox" id="freeze-button">Freeze map</input>
+  <input type="checkbox" id="effect-toggle">Show Effects</input>
 
   <script>
-    function showDiv() {
-      const effect = document.getElementById("container");
-      effect.style.display = "block";
-      effect.style.top = event.clientY + "px";
-      effect.style.left = event.clientX + "px";
-      setTimeout(function() {
+    function showDiv(){
+        const effect = document.getElementById("container");
+        effect.style.display = "block";
+        effect.style.top = event.clientY + "px";
+        effect.style.left = event.clientX + "px";
+        setTimeout(function() {
         effect.style.display = "none";
-      }, 5000);
-      document.addEventListener("click", function(event) {
-        showDiv();
-      });
+        }, 1000);
     }
+    document.addEventListener("click", function(event) {
+      if (document.getElementById('effect-toggle').checked){
+        showDiv();
+      }
+      else{
+        return;
+      }
+    });
+
+    
+
+    // function showDiv(){
+    //   const effect = document.getElementById("container");
+    //   effect.style.display = "block";
+    //   effect.style.top = event.clientY + "px";
+    //   effect.style.left = event.clientX + "px";
+    //   setTimeout(function() {
+    //     effect.style.display = "none";
+    //   }, 5000);
+    // }
+    // document.addEventListener("click", function(event) {
+    //     showDiv();
+    //   });
   </script>
   <!--Text to speech-->
   <!-- <script src="Javascript/TTS.js"></script> -->

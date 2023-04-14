@@ -5,7 +5,9 @@ De vorige casusgroepen hebben objectherkenning weten te realiseren met de digita
 Deze omgeving toont een kaart, waarbij standaard is ingezoomd op de gemeente Valkenburg. Ook wordt op deze kaart de bestemmingslagen ingeladen als datalayer. Dit gebeurd met behulp van ArcGIS Javascript API.
 Indien een object op de tafel geplaatst is dat herkent wordt, verschijnt een cirkel op de kaart, dat geluidsoverlast simuleert (althans, dat hoort de cirkel voor te stellen). 
 
-Deze bevat bovendien een paar extra functies:
+Bij het plaatsen van een object, krijgt de desbetreffende gebruiker gelijk te zien op welk bestemmingsplan het object staat en welke vergunningen (als placeholders) benodigd zijn om het object te mogen plaatsen.
+
+Deze bevat bovendien nog enkele functies:
 - Aflezen bestemmingsplan op basis van object positie
 - Oplezen bestemmingsplan met Text-To-Speech
 - De mogelijkheid om de kaart te bevriezen

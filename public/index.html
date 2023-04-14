@@ -133,13 +133,13 @@
 
 <!--Object recognize and ArcGIS Config-->
 <!-- <script type="module" src="Javascript/ArcGISScript.js"></script> -->
-<script type="module" src="../Object_recognizer/node_modules/tritra/dist/participatieTafel/Javascript/ArcGISScript.js"></script>
+<script type="module" src="../participatieTafel/Javascript/ArcGISScript.js"></script>
 
 <!--Web Page UI-->
 <body>
   <div id="touchBox">
     <div class="feadback" id="FB">
-      <li class="message"><img class="logo" src="../Object_recognizer/node_modules/tritra/dist/participatieTafel/Images/ChatBot.png" alt="">
+      <li class="message"><img class="logo" src="../participatieTafel/Images/ChatBot.png" alt="">
         <h3 id="SP">Waar u momenteel staat is bestemd voor <span id="PLAN"></span></h3>
         <button class="geluid" onclick="speakText()">spreek</button>
         <ul class="boxes">
@@ -190,25 +190,7 @@
         return;
       }
     });
-
-    
-
-    // function showDiv(){
-    //   const effect = document.getElementById("container");
-    //   effect.style.display = "block";
-    //   effect.style.top = event.clientY + "px";
-    //   effect.style.left = event.clientX + "px";
-    //   setTimeout(function() {
-    //     effect.style.display = "none";
-    //   }, 5000);
-    // }
-    // document.addEventListener("click", function(event) {
-    //     showDiv();
-    //   });
   </script>
-  <!--Text to speech-->
-  <!-- <script src="Javascript/TTS.js"></script> -->
-  <!-- <script src="Javascript/TTS.js"></script> -->
-  <script src="../Object_recognizer/node_modules/tritra/dist/participatieTafel/Javascript/TTS.js"></script>
+  <script src="../participatieTafel/Javascript/TTS.js"></script>
 </body>
 </html>

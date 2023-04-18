@@ -20,6 +20,7 @@ Deze bevat bovendien nog enkele functies:
 4. Architectuur
 5. Development
 
+
 ## 1. Vereisten:
 1. Voor de werking van de applicatie is een ArcGIS API Key is vereist. [Maak hier een gratis developer account aan.](https://developers.arcgis.com/sign-up/) Genereer vervolgens een API Key.
 2. Een digitale tafel, met touchscreen herkenning van minimaal 10 punten.
@@ -70,6 +71,7 @@ Een paar overige settings worden aangeraden:
 - Druk op F11 om alleen de webapplicatie te zien (dus de tabs etc. zijn niet zichtbaar)
 - Windows 10: [Schakel Three-finger gestures uit](https://www.tenforums.com/tutorials/148114-how-enable-disable-touchpad-multifinger-gestures-windows-10-a.html), om te voorkomen dat de objectherkenning gaat buggen
 
+
 ## 4. Architectuur
 **Main dish**
 
@@ -81,7 +83,7 @@ De logica om de functionaliteiten werkend te krijgen (die dus tijdens de casus z
 
 **Extra leuke info**
 
-De webpagina wordt via de "live-server" package ingeladen in ```public/index.html``` (het zoekt standaard index.html indien "live-server" getriggered wordt in de root directory. Het gebruik van de "public" folder blijkt een algemene use-case te zijn voor static web apps om de html files in te zetten (citation needed)).
+De webpagina wordt via de "live-server" package ingeladen in ```public/index.html``` (het zoekt standaard index.html indien "live-server" getriggered wordt in de root directory. 
 
 De ```npm start``` command werkt doordat in ```DigitaleTafel/package.json``` de script ervoor is ingesteld als:
 ```
@@ -92,6 +94,7 @@ De ```npm start``` command werkt doordat in ```DigitaleTafel/package.json``` de 
 Indien er errors zich ineens zouden voordoen bij ```npm start```, kunnen in ```DigitaleTafel/package.json``` nog settings getweaked worden.
 
 Alle dependencies zijn als het goed is ook vernomen in de package.json en package-lock.json in de root directory.
+
 
 ## 5. Development
 Visual Studio Code als IDE wordt aangeraden om erop te runnen (andere IDE's zouden in theorie ook moeten werken, maar die zijn niet getest). Ook wordt aangeraden om met Windows te werken, maar nogmaals: in theorie zou Linux en MacOS ook moeten werken. Deze applciatie is op meerdere Windows PC's getest, waarbij deze succesvol zijn doorlopen. Inprincipe is dat alles wat nodig is om deze applicatie verder te ontwikkelen.
